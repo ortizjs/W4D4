@@ -1,0 +1,8 @@
+<h1>Hello and welcome to the Bands index!</h1>
+<% @bands.each do |band|%>
+<ul>
+  <li>
+    <%= band[:name] %>
+  </li>
+  <% end %>
+</ul>

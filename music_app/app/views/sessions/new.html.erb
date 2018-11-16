@@ -1,0 +1,18 @@
+<h1>Welcome to the user log in page!</h1>
+<h2>Please enter your information below</h2>
+<form action="<%= session_url %>" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <label for="eamil">
+    Email:
+    <input type="text" name="user[email]" value"">
+  </label>
+  <br>
+  <br>
+  <label for="password">
+    Password:
+    <input type="password" name="user[password]">
+    </input>
+  </label>
+  <br>
+  <input type="submit" value="Log in">
+</form>
